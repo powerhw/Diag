@@ -1,0 +1,59 @@
+{
+	"mode_name": "sdf",
+	"knowledge": {
+		"dataType": "json",
+		"data": [{
+				"metric": {
+					"name": "master",
+					"logdir": "$SENSORS_DATA_LOG_DIR/sdf/data_loader/master.log"
+				},
+				"values": [
+					["SDF-nima", "org.apache.hive.service.cli.HiveSQLException: Invalid or unknown query handle: 9843dd758b9b749c:08e1a6b800000000", "重启 impala"],
+					["SDF-Master-ERROR", "ERROR", "请解决后加入到知识库，壮大知识库"],
+					["SDF-Master-Exception", "Exception", "请解决后加入到知识库，壮大知识库"]
+				]
+			}, {
+				"metric": {
+					"name": "worker_kudu_to_parquet",
+					"logdir": "$SENSORS_DATA_LOG_DIR/sdf/data_loader/worker_kudu_to_parquet.log"
+				},
+				"values": [
+					["SDF-KToP-01", "Caused by: java.iouiopp.IOException: Error executing command. gzip -dc | (cd /tmp/hadoop-sa_cluster/mapred/local/profile_topic/1639672044088_tmp/mapreduce.tar.gz && tar -x Process exited with exit code 2.", "/tmp 目录空间不足，清理之"],
+					["SDF-KToP-ERROR", "ERROR", "请解决后加入到知识库，壮大知识库"],
+					["SDF-KToP-Exception", "Exception", "请解决后加入到知识库，壮大知识库"]
+				]
+			}, {
+				"metric": {
+					"name": "worker_kafka_consumer",
+					"logdir": "$SENSORS_DATA_LOG_DIR/sdf/data_loader/worker_kafka_consumer.log"
+				},
+				"values": [
+					["SDF-KC-01", "Caused by: java.iouiopp.IOException: Error executing command. gzip -dc | (cd /tmp/hadoop-sa_cluster/mapred/local/profile_topic/1639672044088_tmp/mapreduce.tar.gz && tar -x Process exited with exit code 2.", "/tmp 目录空间不足，清理之"],
+					["SDF-KC-ERROR", "ERROR", "请解决后加入到知识库，壮大知识库"],
+					["SDF-KC-Exception", "Exception", "请解决后加入到知识库，壮大知识库"]
+				]
+			},
+			{
+				"metric": {
+					"name": "worker_maintenance",
+					"logdir": "$SENSORS_DATA_LOG_DIR/sdf/data_loader/worker_maintenance.log"
+				},
+				"values": [
+					["SDF-Mainten-01", "Caused by: java.iouiopp.IOException: Error executing command. gzip -dc | (cd /tmp/hadoop-sa_cluster/mapred/local/profile_topic/1639672044088_tmp/mapreduce.tar.gz && tar -x Process exited with exit code 2.", "/tmp 目录空间不足，清理之"],
+					["SDF-Mainten-ERROR", "ERROR", "请解决后加入到知识库，壮大知识库"],
+					["SDF-Mainten-Exception", "Exception", "请解决后加入到知识库，壮大知识库"]
+				]
+			}, {
+				"metric": {
+					"name": "worker_project_manager",
+					"logdir": "$SENSORS_DATA_LOG_DIR/sdf/data_loader/worker_project_manager.log"
+				},
+				"values": [
+					["SDF-PM-01", "Caused by: java.iouiopp.IOException: Error executing command. gzip -dc | (cd /tmp/hadoop-sa_cluster/mapred/local/profile_topic/1639672044088_tmp/mapreduce.tar.gz && tar -x Process exited with exit code 2.", "/tmp 目录空间不足，清理之"],
+					["SDF-PM-ERROR", "ERROR", "请解决后加入到知识库，壮大知识库"],
+					["SDF-PM-Exception", "Exception", "请解决后加入到知识库，壮大知识库"]
+				]
+			}
+		]
+	}
+}

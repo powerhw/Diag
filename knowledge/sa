@@ -1,0 +1,18 @@
+{
+	"mode_name": "sa",
+	"knowledge": {
+		"dataType": "json",
+		"data": [{
+			"metric": {
+				"name": "web",
+				"logdir": "$SENSORS_DATA_LOG_DIR/sa/web/web.log"
+			},
+			"values": [
+				["SA-001","java.io.IOException", "建议重启 impala"],
+				["SA-002","/tmp/hadoop-sa_cluster/mapred/local/event_topic/mapreduce.tar.gz","母鸡"],
+				["SA-ERROR","ERROR","请解决后添加到知识库，壮大知识库!"],
+				["SA-Exception","Exception","请解决后添加到知识库，壮大知识库!"]
+			]
+		}]
+	}
+} 
